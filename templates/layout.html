@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Study Together</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	{% include 'includes/_navbar.html' %}
+	<div class="container">
+		{% include 'includes/_messages.html' %}
+		{% block body %}{% endblock %}
+	</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+	<script type="text/javascript">
+		CKEDITOR.replace('editor')
+	</script>
+
+</body>
+</html>
